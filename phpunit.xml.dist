@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    bootstrap="vendor/autoload.php"
+    colors="true"
+    verbose="true"
+    stopOnFailure="false"
+    failOnWarning="true"
+    failOnRisky="true"
+    executionOrder="depends,defects"
+    beStrictAboutTestsThatDoNotTestAnything="true"
+    beStrictAboutOutputDuringTests="true"
+    beStrictAboutTodoAnnotatedTests="true"
+>
+    <testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">tests/</directory>
+        </testsuite>
+        <testsuite name="Integration">
+            <directory suffix="Test.php">tests_full/Integration</directory>
+        </testsuite>
+        <testsuite name="Functional">
+            <directory suffix="Test.php">tests_full/Functional</directory>
+        </testsuite>
+        <testsuite name="E2E">
+            <directory suffix="Test.php">tests_full/E2E</directory>
+        </testsuite>
+    </testsuites>
+
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory>src/Domain</directory>
+            <directory>src/Application</directory>
+            <directory>src/Engine</directory>
+        </include>
+        <report>
+            <html outputDirectory="build/coverage-html"/>
+            <clover outputFile="build/logs/clover.xml"/>
+            <text outputFile="build/logs/coverage.txt" showUncoveredFiles="true"/>
+        </report>
+    </coverage>
+
+    <logging>
+        <junit outputFile="build/logs/junit.xml"/>
+    </logging>
+</phpunit>

@@ -1,0 +1,18 @@
+{
+  "US": {
+    "TX": {
+      "name": "Texas"
+    },
+    "CA": {
+      "name": "California"
+    }
+  },
+  "UA": {
+    "30": {
+      "name": "Kyiv"
+    },
+    "32": {
+      "name": "Kyivska oblast"
+    }
+  }
+}

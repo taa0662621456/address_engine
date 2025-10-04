@@ -1,0 +1,27 @@
+{
+  "US": {
+    "name": "United States",
+    "alpha2": "US",
+    "alpha3": "USA"
+  },
+  "UA": {
+    "name": "Ukraine",
+    "alpha2": "UA",
+    "alpha3": "UKR"
+  },
+  "DE": {
+    "name": "Germany",
+    "alpha2": "DE",
+    "alpha3": "DEU"
+  },
+  "FR": {
+    "name": "France",
+    "alpha2": "FR",
+    "alpha3": "FRA"
+  },
+  "GB": {
+    "name": "United Kingdom",
+    "alpha2": "GB",
+    "alpha3": "GBR"
+  }
+}

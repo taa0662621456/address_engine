@@ -1,0 +1,4 @@
+{
+  "US": "{street}, {city}, {subdivision}, {zipcode}, {country}",
+  "UA": "{zipcode}, {city}, {street}, {country}"
+}

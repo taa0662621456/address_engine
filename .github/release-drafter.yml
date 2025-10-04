@@ -1,0 +1,48 @@
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+categories:
+  - title: '🚀 Features'
+    labels:
+      - 'feature'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'bug'
+  - title: '🧹 Maintenance'
+    labels:
+      - 'chore'
+      - 'refactor'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&'
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+template: |
+  # 📢 AddressEngine $RESOLVED_VERSION — Release
+
+  ## 🎯 Overview
+  AddressEngine — лёгкая, расширяемая библиотека для работы с адресами.  
+
+  ## ✨ Features
+  $CHANGES
+
+  ## 🛠 Installation
+  ```bash
+  composer require your-org/address-engine
+  ```
+
+  ## 📊 QA & Reports
+  - ✅ PHPUnit + Behat + E2E  
+  - ✅ Allure Reports  
+  - ✅ SonarCloud + Codecov  
+  - ✅ PHPStan + Psalm  
+  - ✅ Pre-commit hooks  
+
+  ⚡ Release generated automatically via Release Drafter.
